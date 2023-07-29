@@ -1,3 +1,0 @@
-D:/workSpace/CLionProjects/smartHome/cmake-build-debug/CMakeFiles/test01.elf.dir
-D:/workSpace/CLionProjects/smartHome/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/workSpace/CLionProjects/smartHome/cmake-build-debug/CMakeFiles/rebuild_cache.dir
