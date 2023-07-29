@@ -22,6 +22,7 @@
 #include "stm32f1xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "escp8266.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,7 +56,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern PCD_HandleTypeDef hpcd_USB_FS;
+extern TIM_HandleTypeDef htim2;
 extern DMA_HandleTypeDef hdma_usart1_rx;
 extern DMA_HandleTypeDef hdma_usart1_tx;
 extern DMA_HandleTypeDef hdma_usart2_rx;
@@ -213,6 +214,7 @@ void DMA1_Channel4_IRQHandler(void)
   /* USER CODE END DMA1_Channel4_IRQn 0 */
   HAL_DMA_IRQHandler(&hdma_usart1_tx);
   /* USER CODE BEGIN DMA1_Channel4_IRQn 1 */
+
   /* USER CODE END DMA1_Channel4_IRQn 1 */
 }
 
@@ -259,17 +261,17 @@ void DMA1_Channel7_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles USB low priority or CAN RX0 interrupts.
+  * @brief This function handles TIM2 global interrupt.
   */
-void USB_LP_CAN1_RX0_IRQHandler(void)
+void TIM2_IRQHandler(void)
 {
-  /* USER CODE BEGIN USB_LP_CAN1_RX0_IRQn 0 */
+  /* USER CODE BEGIN TIM2_IRQn 0 */
 
-  /* USER CODE END USB_LP_CAN1_RX0_IRQn 0 */
-  HAL_PCD_IRQHandler(&hpcd_USB_FS);
-  /* USER CODE BEGIN USB_LP_CAN1_RX0_IRQn 1 */
+  /* USER CODE END TIM2_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim2);
+  /* USER CODE BEGIN TIM2_IRQn 1 */
 
-  /* USER CODE END USB_LP_CAN1_RX0_IRQn 1 */
+  /* USER CODE END TIM2_IRQn 1 */
 }
 
 /**
@@ -293,15 +295,14 @@ void USART1_IRQHandler(void)
             }
         }
 //        rx_len = BUFFER_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart1_rx); //计算出数据长度
-        HAL_UART_Transmit_DMA(&huart2, rx_buffer,i);//将收到的数据发送出去
-        HAL_UART_Receive_DMA(&huart1,rx_buffer,BUFFER_SIZE);//开启DMA接收，方便下一次接收数据
+        HAL_UART_Transmit_DMA(&huart2,rx_buffer,i);
+        HAL_UART_Receive_DMA(&huart1,rx_buffer,BUFFER_SIZE);//开启DMA接
+
 
     }
     if (__HAL_UART_GET_FLAG(&huart1,UART_FLAG_TC) != RESET){
         memset(rx_buffer1,0,sizeof(rx_buffer1));
-
     }
-
   /* USER CODE END USART1_IRQn 1 */
 }
 
@@ -326,12 +327,33 @@ void USART2_IRQHandler(void)
             }
         }
 //        rx_len = BUFFER_SIZE - __HAL_DMA_GET_COUNTER(&hdma_usart1_rx); //计算出数据长度
-        HAL_UART_Transmit_DMA(&huart1, rx_buffer1,i);//将收到的数据发送出去
+        ESP8266_ON_MSG((char *)rx_buffer1);
+        HAL_UART_Transmit_DMA(&huart1,rx_buffer1,i);
         HAL_UART_Receive_DMA(&huart2,rx_buffer1,BUFFER_SIZE);//开启DMA接
+
+
+    }
+    if (__HAL_UART_GET_FLAG(&huart2,UART_FLAG_TC) != RESET){
+        memset(rx_buffer,0,sizeof(rx_buffer));
+
     }
   /* USER CODE END USART2_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */
+/**
+ * 重试等待时间到
+ * @param htim
+ */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+    if (htim==(&htim2)){
+        if (IN_BAFA){
+            BAFA_TTL();
+        }else{
+            ESP8266_SEND_MSG(esp8266_CMD[CMD_INDEX]);
+            RETRY_COUNT++;
+        }
 
+    }
+}
 /* USER CODE END 1 */

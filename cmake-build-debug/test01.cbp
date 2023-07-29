@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/work space/stm32CubeMX/test01/cmake-build-debug"/>
+				<Option working_dir="D:/workSpace/CLionProjects/smartHome/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test01.elf">
-				<Option output="D:/work space/stm32CubeMX/test01/cmake-build-debug/test01.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work space/stm32CubeMX/test01/cmake-build-debug"/>
+				<Option output="D:/workSpace/CLionProjects/smartHome/cmake-build-debug/test01.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/workSpace/CLionProjects/smartHome/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -27,28 +27,29 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xB"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Core/Inc"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Core/Inc"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Custom/Inc"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 test01.elf"/>
-					<CompileFile command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 test01.elf"/>
+					<CompileFile command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test01.elf/fast">
-				<Option output="D:/work space/stm32CubeMX/test01/cmake-build-debug/test01.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/work space/stm32CubeMX/test01/cmake-build-debug"/>
+				<Option output="D:/workSpace/CLionProjects/smartHome/cmake-build-debug/test01.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/workSpace/CLionProjects/smartHome/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -56,281 +57,315 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xB"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Core/Inc"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
-					<Add directory="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
-					<Add directory="d:\development tools\clionstm32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Core/Inc"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include"/>
+					<Add directory="D:/workSpace/CLionProjects/smartHome/Custom/Inc"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="d:\software\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 test01.elf/fast"/>
-					<CompileFile command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 test01.elf/fast"/>
+					<CompileFile command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/work space/stm32CubeMX/test01/cmake-build-debug"/>
+				<Option working_dir="D:/workSpace/CLionProjects/smartHome/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/work space/stm32CubeMX/test01/cmake-build-debug"/>
+				<Option working_dir="D:/workSpace/CLionProjects/smartHome/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/DEVELO~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;D:/work space/stm32CubeMX/test01/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/software/mingw64/bin/mingw32-make.exe -f &quot;D:/workSpace/CLionProjects/smartHome/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Inc/gpio.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Inc/dma.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Inc/main.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Inc/gpio.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Inc/stm32f1xx_hal_conf.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Inc/main.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Inc/stm32f1xx_it.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Inc/stm32f1xx_hal_conf.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Src/gpio.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Inc/stm32f1xx_it.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Src/main.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Inc/tim.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Src/stm32f1xx_hal_msp.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Inc/usart.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Src/stm32f1xx_it.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/dma.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Src/syscalls.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/gpio.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Src/sysmem.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/main.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Src/system_stm32f1xx.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/stm32f1xx_hal_msp.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Core/Startup/startup_stm32f103c8tx.s">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/stm32f1xx_it.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/syscalls.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/sysmem.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/system_stm32f1xx.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/tim.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/cmsis_armcc.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Src/usart.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/cmsis_armclang.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Core/Startup/startup_stm32f103c8tx.s">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/cmsis_compiler.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Custom/Src/esp8266.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/cmsis_gcc.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/cmsis_iccarm.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/cmsis_version.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_armv8mbl.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_armv8mml.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/cmsis_armcc.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_cm0.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/cmsis_armclang.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_cm0plus.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/cmsis_compiler.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_cm1.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/cmsis_gcc.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_cm23.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/cmsis_iccarm.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_cm3.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/cmsis_version.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_cm33.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_armv8mbl.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_cm4.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_armv8mml.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_cm7.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_cm0.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_sc000.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_cm0plus.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/core_sc300.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_cm1.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/mpu_armv7.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_cm23.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/mpu_armv8.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_cm3.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/Include/tz_context.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_cm33.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/CMSIS/LICENSE.txt">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_cm4.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_cm7.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_sc000.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/core_sc300.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/mpu_armv7.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/mpu_armv8.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/Include/tz_context.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/CMSIS/LICENSE.txt">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/STM32F103C8TX_FLASH.ld">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
 			<Option target="test01.elf"/>
 		</Unit>
-		<Unit filename="D:/work space/stm32CubeMX/test01/CMakeLists.txt">
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/STM32F103C8TX_FLASH.ld">
+			<Option target="test01.elf"/>
+		</Unit>
+		<Unit filename="D:/workSpace/CLionProjects/smartHome/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

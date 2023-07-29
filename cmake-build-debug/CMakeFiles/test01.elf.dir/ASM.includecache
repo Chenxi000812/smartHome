@@ -6,5 +6,5 @@
 
 #IncludeRegexTransform: 
 
-D:/work space/stm32CubeMX/test01/Core/Startup/startup_stm32f103c8tx.s
+D:/workSpace/CLionProjects/smartHome/Core/Startup/startup_stm32f103c8tx.s
 

@@ -19,13 +19,14 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
+#include "tim.h"
 #include "usart.h"
-#include "usb_device.h"
 #include "gpio.h"
-#include "../../USB_DEVICE/App/usbd_cdc_if.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "string.h"
+#include "escp8266.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -92,15 +93,16 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_DMA_Init();
-  MX_USART1_UART_Init();
   MX_USART2_UART_Init();
-  MX_USB_DEVICE_Init();
+  MX_USART1_UART_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
     __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);
     HAL_UART_Receive_DMA(&huart1,rx_buffer,BUFFER_SIZE);
     __HAL_UART_ENABLE_IT(&huart2, UART_IT_IDLE);
     HAL_UART_Receive_DMA(&huart2,rx_buffer1,BUFFER_SIZE);
-    HAL_GPIO_WritePin(WIFIRST_GPIO_Port,WIFIRST_Pin,GPIO_PIN_RESET);
+//    HAL_GPIO_WritePin(WIFIRST_GPIO_Port,WIFIRST_Pin,GPIO_PIN_RESET);
+    ESP8266_RESET();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,14 +110,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-      if(USB_RX_STA!=0)//判断是否有
-      {
-          //USB_printf("USB_RX:");//向USB模拟串口发字符串
-          CDC_Transmit_FS(USB_RX_BUF,USB_RX_STA);//USB串口：将接收的数据发回给电脑端
-          //USB_printf("\r\n");//向USB模拟串口发（回车）
-          USB_RX_STA=0;//数据标志位清0
-          memset(USB_RX_BUF,0,sizeof(USB_RX_BUF));//USB串口数据寄存器清0
-      }
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -129,7 +124,6 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -156,12 +150,6 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB;
-  PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLL;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
   }
